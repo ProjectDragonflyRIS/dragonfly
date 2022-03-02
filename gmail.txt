@@ -1,5 +1,0 @@
-user:
-projectDragonflyRIS@gmail.com
-
-pass:
-ris2022!
