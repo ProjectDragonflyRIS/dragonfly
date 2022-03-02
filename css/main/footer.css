@@ -1,0 +1,48 @@
+/* footer */
+
+#fll-logo {
+    position: relative;
+    top: -30px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    animation-name: fll-logo-intro;
+    animation-duration: 0.5s;
+}
+#footer-copyright {
+    position: relative;
+    font-family: 'IBM Plex Mono';
+    font-size: 12px;
+    color: #858080;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 0px;
+    top: 30px;
+}
+.footer-link {
+    position: relative;
+    margin-right: 30px;
+    left: -50px;
+    top: 30px;
+    font-family: 'IBM Plex Mono';
+    font-size: 12px;
+    text-decoration: underline;
+    color: #858080;
+}
+.footer-link:hover {
+    color: #ffffff;
+}
+
+footer {
+    display: flex;
+    flex-direction: ltr;
+    flex-wrap: nowrap;
+    position: fixed;
+    top: calc(100vh - 80px);
+    left: 0px;
+    width: 100vw;
+    height: 80px;
+    background-color: #2F2235;
+    animation-name: footer-slide-in;
+    animation-duration: 0.2s;
+}

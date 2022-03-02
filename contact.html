@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Contact Us</title>
+        <meta charset="utf-8">
+        <meta lang="en-us">
+
+        <!-- css -->
+        <link rel="stylesheet" href="css/main/main.css">
+        <link rel="stylesheet" href="css/contact.css">
+
+        <!-- js -->
+        <script src="js/menu.js"></script>
+        <script src="js/loop.js"></script>
+    </head>
+    <body style="background-color: #000000; overflow-x: hidden;">
+        
+        <!-- main parts of the page/information -->
+        <header>
+            <div id="background"></div>
+            <img src="images/logo.png" id="logo" style="left: 50px;">
+            <h1>Contact Us</h1>
+            <div id="extender" style="height: 120vh;"></div>
+        </header>
+        
+        <!-- information -->
+        <div id="contact-container">
+            <!-- box that asks you to submit a form -->
+            <div class="box">
+                <!-- title -->
+                <h2>Got an issue or unlisted question?</h2>
+                <!-- text -->
+                <p class="box-info">
+                    Whether it's a technical or business inquiry, don't hesitate to contact us!
+                </p>
+                <!-- link/button to the form -->
+                <a href="https://forms.gle/nNdTT1DgoCw9ZxXR6" id="form-link">Submit a form</a>
+            </div>
+            <!-- box that simply gives you the company's email address -->
+            <div class="box">
+                <!-- title -->
+                <h2>Got something to settle on a personal note?</h2>
+                <!-- text -->
+                <p class="box-info">
+                    Make sure to let us know via email! <br> <br>
+                    Email: projectdragonflyris@gmail.com
+                </p>
+            </div>
+        </div>
+
+        <!-- footer (if not already clear) -->
+        <footer id="footer">
+            <!-- FLL logo, if clicked, send to FLL home page -->
+            <a href="https://www.firstlegoleague.org/">
+                <img id="fll-logo" src="images/fll.png" alt="RTA Dubai Logo">
+            </a>
+            <!-- copyright and company name -->
+            <p id="footer-copyright">Copyright &copy 2022 Dragonfly Inc</p>
+            <!-- links to pages -->
+            <a href="index.html" class="footer-link" style="margin-left: auto;">Home</a>
+            <a href="about.html" class="footer-link">About Us</a>
+            <a href="product.html" class="footer-link">Our Product</a>
+            <a href="faq.html" class="footer-link">FAQ</a>
+            <a href="contact.html" class="footer-link">Contact Us</a>
+        </footer>
+
+        <!-- navigation bar -->
+
+        <!-- white slightly transparent wall that appears when hamburger is pressed -->
+        <div id="menu-background"></div>
+        <!-- hamburger menu -->
+        <button id="hamburger-menu" onclick="menuPressed();">
+            <img src="images/menu.svg" id="hamburger-menu-image">
+        </button>
+        <div id="navbar">
+            <!-- x menu -->
+            <button id="x-menu" onclick="menuPressed();">
+                <img src="images/x-menu.png" id="x-menu-image">
+            </button>
+            <div class="navbar-option">
+                <a href="index.html" class="navbar-text"><b>Home</b></a>
+            </div>
+            <div class="navbar-option">
+                <a href="about.html" class="navbar-text"><b>About Us</b></a>
+            </div>
+            <div class="navbar-option">
+                <a href="product.html" class="navbar-text"><b>Our Product</b></a>
+            </div>
+            <div class="navbar-option">
+                <a href="faq.html" class="navbar-text"><b>FAQ</b></a>
+            </div>
+            <div class="navbar-option">
+                <a href="contact.html" class="navbar-text"><b>Contact Us</b></a>
+            </div>
+        </div>
+    </body>
+</html>
