@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Our Product</title>
+        <meta charset="utf-8">
+        <meta lang="en-us">
+
+        <!-- css -->
+        <link rel="stylesheet" href="css/main/main.css">
+        <link rel="stylesheet" href="css/product.css">
+
+        <!-- js -->
+        <script src="js/menu.js"></script>
+        <script src="js/loop.js"></script>
+    </head>
+    <body style="background-color: #000000; overflow-x: hidden;">
+        
+        <!-- main parts of the page/information -->
+        <header>
+            <a href="index.html"><img src="images/logo.png" id="logo"></a>
+            <h1>Our Product</h1>
+            <!-- background -->
+            <!--<img class="background-image1" src="images/index/image1.jpg">-->
+        </header>
+        
+        <!-- information -->
+        <div id="product" style="position: absolute; top: 0px; left: 0px;">
+            <img src="images/product/image1.jpg" id="image1">
+            <div id="image1-gradient"></div>
+            <p id="text1">
+                This vehicle's features include transportation on air, land, and water, 
+                as well as transporting people, packages, rescue, and other resources.
+                This vehicle could be the revolutionary solution to 
+                difficult terrain and rescue missions. <br><br>
+                We present to you, Dragonfly™.
+            </p>
+        </div>
+
+        <!-- footer (if not already clear) -->
+        <footer id="footer">
+            <!-- FLL logo, if clicked, send to FLL home page -->
+            <a href="https://www.firstlegoleague.org/">
+                <img id="fll-logo" src="images/fll.png" alt="RTA Dubai Logo">
+            </a>
+            <!-- copyright and company name -->
+            <p id="footer-copyright">Copyright &copy 2022 Dragonfly Inc</p>
+            <!-- links to pages -->
+            <a href="index.html" class="footer-link" style="margin-left: auto;">Home</a>
+            <a href="about.html" class="footer-link">About Us</a>
+            <a href="product.html" class="footer-link">Our Product</a>
+            <a href="faq.html" class="footer-link">FAQ</a>
+            <a href="contact.html" class="footer-link">Contact Us</a>
+        </footer>
+
+        <!-- navigation bar -->
+        
+        <!-- white slightly transparent wall that appears when hamburger is pressed -->
+        <div id="menu-background"></div>
+        <!-- hamburger menu -->
+        <button id="hamburger-menu" onclick="menuPressed();">
+            <img src="images/menu.svg" id="hamburger-menu-image">
+        </button>
+        <div id="navbar">
+            <!-- x menu -->
+            <button id="x-menu" onclick="menuPressed();">
+                <img src="images/x-menu.png" id="x-menu-image">
+            </button>
+            <div class="navbar-option">
+                <a href="index.html" class="navbar-text"><b>Home</b></a>
+            </div>
+            <div class="navbar-option">
+                <a href="about.html" class="navbar-text"><b>About Us</b></a>
+            </div>
+            <div class="navbar-option">
+                <a href="product.html" class="navbar-text"><b>Our Product</b></a>
+            </div>
+            <div class="navbar-option">
+                <a href="faq.html" class="navbar-text"><b>FAQ</b></a>
+            </div>
+            <div class="navbar-option">
+                <a href="contact.html" class="navbar-text"><b>Contact Us</b></a>
+            </div>
+        </div>
+    </body>
+</html>

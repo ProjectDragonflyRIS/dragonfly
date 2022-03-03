@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <title>About Us</title>
+        <meta charset="utf-8">
+        <meta lang="en-us">
+
+        <!-- css -->
+        <link rel="stylesheet" href="css/main/main.css">
+        <link rel="stylesheet" href="css/about.css">
+
+        <!-- js -->
+        <script src="js/menu.js"></script>
+        <script src="js/loop.js"></script>
+        <script src="js/timeline.js"></script>
+    </head>
+    <body style="background-color: #000000; overflow-x: hidden;">
+        
+        <!-- main parts of the page/information -->
+        <header>
+            <a href="index.html"><img src="images/logo.png" id="logo"></a>
+            <h1>About Us</h1>
+            <!-- background -->
+            <img id="background-image" src="images/about/image1.jpg" style="height: 130vh;">
+            <div id="background-gradient" style="height: 130vh;"></div>
+        </header>
+        
+        <!-- information -->
+        <div style="display: flex; flex-direction: column; justify-content: space-evenly;">
+            <p id="text1" class="col">
+                <b><i>We are students in RIS finishing our project we started off over 8 months ago, 
+                we've learned a ton and have definitely become more intellectually focused 
+                on the stability of our idea.</i></b> <br><br>
+
+                We are hoping to achieve symbiosis between the economy, environment, 
+                and methods of transportation. <br><br>
+                
+                Our idea has been changed a few times, but has had the 
+                time to grow and evolve into Project Dragonfly.  
+            </p>
+            <!-- timeline -->
+            <h2 id="timeline-title">Project Timeline</h2>
+            <div id="timeline">
+                <!-- item 1 -->
+                <button id="timeline-item1" class="timeline-item" onclick="timelineItemPressed(1)">
+                    <p class="timeline-item-date">29th October 2021</p>
+                    <p class="timeline-item-number">1</p>
+                </button>
+                <!-- item 2 -->
+                <button id="timeline-item2" class="timeline-item" onclick="timelineItemPressed(2)">
+                    <p class="timeline-item-date">12th November 2021</p>
+                    <p class="timeline-item-number">2</p>
+                </button>
+                <!-- item 3 -->
+                <button id="timeline-item3" class="timeline-item" onclick="timelineItemPressed(3)">
+                    <p class="timeline-item-date">3rd December 2021</p>
+                    <p class="timeline-item-number">3</p>
+                </button>
+                <!-- item 4 -->
+                <button id="timeline-item4" class="timeline-item" onclick="timelineItemPressed(4)">
+                    <p class="timeline-item-date">11th February 2010</p>
+                    <p class="timeline-item-number">4</p>
+                </button>
+                <!-- item 5 -->
+                <button id="timeline-item5" class="timeline-item" onclick="timelineItemPressed(5)">
+                    <p class="timeline-item-date">??????</p>
+                    <p class="timeline-item-number">5</p>
+                </button>
+            </div>
+            <p id="timeline-description">
+                Lorem Ipsum.
+            </p>
+            <!-- make page extend slightly more -->
+            <div style="position: relative; top: 350; width: 1px; height: 200px;"></div>
+        </div>
+
+        <!-- footer (if not already clear) -->
+        <footer id="footer">
+            <!-- FLL logo, if clicked, send to FLL home page -->
+            <a href="https://www.firstlegoleague.org/">
+                <img id="fll-logo" src="images/fll.png" alt="RTA Dubai Logo">
+            </a>
+            <!-- copyright and company name -->
+            <p id="footer-copyright">Copyright &copy 2022 Dragonfly Inc</p>
+            <!-- links to pages -->
+            <a href="index.html" class="footer-link" style="margin-left: auto;">Home</a>
+            <a href="about.html" class="footer-link">About Us</a>
+            <a href="product.html" class="footer-link">Our Product</a>
+            <a href="faq.html" class="footer-link">FAQ</a>
+            <a href="contact.html" class="footer-link">Contact Us</a>
+        </footer>
+
+        <!-- navigation bar -->
+        
+        <!-- white slightly transparent wall that appears when hamburger is pressed -->
+        <div id="menu-background"></div>
+        <!-- hamburger menu -->
+        <button id="hamburger-menu" onclick="menuPressed();">
+            <img src="images/menu.svg" id="hamburger-menu-image">
+        </button>
+        <div id="navbar">
+            <!-- x menu -->
+            <button id="x-menu" onclick="menuPressed();">
+                <img src="images/x-menu.png" id="x-menu-image">
+            </button>
+            <div class="navbar-option">
+                <a href="index.html" class="navbar-text"><b>Home</b></a>
+            </div>
+            <div class="navbar-option">
+                <a href="about.html" class="navbar-text"><b>About Us</b></a>
+            </div>
+            <div class="navbar-option">
+                <a href="product.html" class="navbar-text"><b>Our Product</b></a>
+            </div>
+            <div class="navbar-option">
+                <a href="faq.html" class="navbar-text"><b>FAQ</b></a>
+            </div>
+            <div class="navbar-option">
+                <a href="contact.html" class="navbar-text"><b>Contact Us</b></a>
+            </div>
+        </div>
+    </body>
+</html>
