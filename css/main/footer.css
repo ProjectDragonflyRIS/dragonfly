@@ -1,5 +1,37 @@
 /* footer */
 
+/* desktop port */
+@media (orientation: landscape) {
+    footer {
+        display: flex;
+        flex-direction: ltr;
+        flex-wrap: nowrap;
+        position: fixed;
+        top: calc(100vh - 80px);
+        left: 0px;
+        width: 100vw;
+        height: 80px;
+        background-color: #2F2235;
+        animation-name: footer-slide-in;
+        animation-duration: 0.2s;
+    }
+}
+
+/* mobile port */
+@media (orientation: portrait) {
+    footer {
+        display: flex;
+        flex-direction: ltr;
+        flex-wrap: nowrap;
+        position: fixed;
+        top: calc(100vh - 80px);
+        left: 0px;
+        width: 100vw;
+        height: 80px;
+        background-color: #2F2235;
+    }
+}
+
 #fll-logo {
     position: relative;
     top: -30px;
@@ -33,16 +65,3 @@
     color: #ffffff;
 }
 
-footer {
-    display: flex;
-    flex-direction: ltr;
-    flex-wrap: nowrap;
-    position: fixed;
-    top: calc(100vh - 80px);
-    left: 0px;
-    width: 100vw;
-    height: 80px;
-    background-color: #2F2235;
-    animation-name: footer-slide-in;
-    animation-duration: 0.2s;
-}

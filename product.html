@@ -54,7 +54,7 @@
         </footer>
 
         <!-- navigation bar -->
-        
+
         <!-- white slightly transparent wall that appears when hamburger is pressed -->
         <div id="menu-background"></div>
         <!-- hamburger menu -->
@@ -66,20 +66,23 @@
             <button id="x-menu" onclick="menuPressed();">
                 <img src="images/x-menu.png" id="x-menu-image">
             </button>
-            <div class="navbar-option">
-                <a href="index.html" class="navbar-text"><b>Home</b></a>
-            </div>
-            <div class="navbar-option">
-                <a href="about.html" class="navbar-text"><b>About Us</b></a>
-            </div>
-            <div class="navbar-option">
-                <a href="product.html" class="navbar-text"><b>Our Product</b></a>
-            </div>
-            <div class="navbar-option">
-                <a href="faq.html" class="navbar-text"><b>FAQ</b></a>
-            </div>
-            <div class="navbar-option">
-                <a href="contact.html" class="navbar-text"><b>Contact Us</b></a>
+            
+            <!-- contains and holds all of the navigation bar items -->
+            <div id="navbar-item-container">
+                <!-- redirect to index -->
+                <a href="index.html" class="navbar-item"><b>Home</b></a>
+
+                <!-- redirect to about -->
+                <a href="about.html" class="navbar-item"><b>About Us</b></a>
+
+                <!-- redirect to product -->
+                <a href="product.html" class="navbar-item"><b>Our Product</b></a>
+
+                <!-- redirect to faq -->
+                <a href="faq.html" class="navbar-item"><b>FAQ</b></a>
+
+                <!-- redirect to contact -->
+                <a href="contact.html" class="navbar-item"><b>Contact Us</b></a>
             </div>
         </div>
     </body>

@@ -1,43 +1,129 @@
 /* navigation bar and hamburger menu */
-#navbar {
-    position: fixed;
-    left: -250px;
-    background-color: #2F2235;
-    width: 16vw; 
-    min-width: 200px;
-    border-radius: 2px;
-    padding-top: 25px;
-    padding-left: 50px;
-    margin-left: -50px;
-    animation-name: menu-slide;
-    animation-duration: 0.4s;
-    height: 100vh;
-    top: 0;
+
+/* desktop port */
+@media (orientation: landscape) {
+    #navbar {
+        position: fixed;
+        left: -250px;
+        background-color: #2F2235;
+        width: 16vw; 
+        min-width: 200px;
+        border-radius: 2px;
+        padding-top: 25px;
+        padding-left: 50px;
+        margin-left: -50px;
+        animation-name: navbar-slide;
+        animation-duration: 0.4s;
+        height: 100vh;
+        top: 0px;
+    }
+    #x-menu {
+        position: relative;
+        left: calc(100% - 1vw - 40px);
+        top: 10px;
+        background-color: transparent;
+        border: none;
+        animation-name: navbar-item-cancel-hover;
+        animation-duration: 0.2s;
+        width: 16px;
+        height: 16px;
+        padding: 16px 16px 16px 16px;
+        margin-bottom: 16px;
+        margin-right: 16px;
+        border-radius: 2px;
+    }
+    #x-menu-image {
+        position: relative;
+        width: 16px;
+        height: 16px;
+        left: -8px;
+        top: -8px;
+    }
+    #navbar-item-container {
+        position: relative;
+        left: 10%;
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+    .navbar-item {
+        font-family: 'Roboto';
+        text-decoration: none;
+        padding: 8px 8px 8px 8px;
+        margin-right: auto;
+        border-radius: 2px;
+        font-size: 20px;
+        color: #ffffff;
+        animation-name: navbar-item-cancel-hover;
+        animation-duration: 0.2s;
+    }
 }
-#navbar-item-container {
-    position: relative;
-    left: 10%;
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
+
+/* mobile port */
+@media (orientation: portrait) {
+    #navbar {
+        position: fixed;
+        left: 0px;
+        background-color: #2F2235;
+        width: 100vw;
+        height: 66vh;
+        margin: none;
+        border-radius: 2px;
+        animation-name: navbar-slide;
+        animation-duration: 0.4s;
+        top: -120vh;
+    }
+    #x-menu {
+        position: relative;
+        left: 30px;
+        top: 30px;
+        background-color: transparent;
+        border: none;
+        animation-name: navbar-item-cancel-hover;
+        animation-duration: 0.2s;
+        width: 16px;
+        height: 16px;
+        padding: 16px 16px 16px 16px;
+        margin-bottom: 16px;
+        margin-right: 16px;
+        border-radius: 2px;
+    }
+    #x-menu-image {
+        position: relative;
+        width: 16px;
+        height: 16px;
+        left: -8px;
+        top: -8px;
+    }
+    #navbar-item-container {
+        position: relative;
+        left: 40%;
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+    .navbar-item {
+        font-family: 'Roboto';
+        text-decoration: none;
+        padding: 8px 8px 8px 8px;
+        margin-right: auto;
+        border-radius: 2px;
+        font-size: 3vh;
+        color: #ffffff;
+        animation-name: navbar-item-cancel-hover;
+        animation-duration: 0.2s;
+    }
 }
-.navbar-item {
-    font-family: 'Roboto';
-    text-decoration: none;
-    padding: 8px 8px 8px 8px;
-    margin-right: auto;
-    border-radius: 2px;
-    font-size: 1.2vw;
-    color: #ffffff;
-    animation-name: item-cancel-hover;
-    animation-duration: 0.2s;
-}
+
 .navbar-item:hover {
     color: #000000;
-    animation-name: item-hover;
+    animation-name: navbar-item-hover;
     background-color: rgba(215, 221, 221, 0.4);
 }
 #hamburger-menu {
@@ -50,14 +136,14 @@
     box-shadow: none;
     width: 32px;
     height: 32px;
-    animation-name: item-cancel-hover;
+    animation-name: navbar-item-cancel-hover;
     animation-duration: 0.2s;
     border-radius: 1px;
 }
 #hamburger-menu:hover {
     cursor: pointer;
     background-color: rgba(215, 221, 221, 0.4);
-    animation-name: item-hover;
+    animation-name: navbar-item-hover;
 }
 #hamburger-menu-image {
     position: relative;
@@ -67,30 +153,10 @@
     height: 32px; 
     pointer-events: none;
 }
-#x-menu {
-    position: relative;
-    left: calc(100% - 4vw);
-    top: -15px;
-    background-color: transparent;
-    border: none;
-    animation-name: item-cancel-hover;
-    animation-duration: 0.2s;
-    width: 1vw;
-    height: 1vw;
-    padding: 16px 16px 16px 16px;
-    border-radius: 1px;
-}
 #x-menu:hover {
     cursor: pointer;
     background-color: rgba(215, 221, 221, 0.4);
-    animation-name: item-hover;
-}
-#x-menu-image {
-    position: relative;
-    width: 16px;
-    height: 16px;
-    left: -8px;
-    top: -8px;
+    animation-name: navbar-item-hover;
 }
 #menu-background {
     position: fixed;
