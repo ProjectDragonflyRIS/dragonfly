@@ -8,20 +8,12 @@
     to {left: -250px;}
 }
 @keyframes item-hover {
-    from {background-color: transparent;}
-    to {background-color: rgba(215, 221, 221, 0.4);}
+    from {background-color: transparent; color: #ffffff;}
+    to {background-color: rgba(215, 221, 221, 0.4); color: #000000;}
 }
 @keyframes item-cancel-hover {
-    from {background-color: rgba(215, 221, 221, 0.4);}
-    to {background-color: transparent;}
-}
-@keyframes item-text-hover {
-    from {color: #ffffff;}
-    to {color: #000000;}
-}
-@keyframes item-text-cancel-hover {
-    from {color: #000000;}
-    to {color: #ffffff;}
+    from {background-color: rgba(215, 221, 221, 0.4); color: #000000;}
+    to {background-color: transparent; color: #ffffff;}
 }
 @keyframes menu-background-on {
     from {background-color: transparent; width: 100vw;}

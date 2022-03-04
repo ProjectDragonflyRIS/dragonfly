@@ -20,12 +20,11 @@ color palette:
 
 #logo {
     position: absolute;
-    top: 20px;
-    left: 0px;
-    -webkit-user-drag: none;
-    width: 100;
+    top: 30px;
+    left: calc(100vw - 100px - 7.5vw);
+    width: 7.5vw;
+    min-width: 80px;
     height: auto;
-    margin-left: 10vw;
 }
 
 #background-image {
@@ -71,20 +70,6 @@ h2 {
 /* regular text */
 p {
     font-family: 'Ubuntu';
-    font-size: 1.2vw; /* width parameter */
+    font-size: 1.4vw; /* width parameter */
     color: #ffffff;
-}
-
-
-/* if the screen is wider than 1400px, to prevent the title from getting TOO large,
-just set it to a fixed size of 50px */
-@media screen and (min-width: 1400px) {
-    h1 {
-        position: relative;
-        top: 30px;
-        text-align: center;
-        font-family: 'IBM Plex Mono';
-        font-size: 50px;
-        color: #ffffff;
-    }
 }

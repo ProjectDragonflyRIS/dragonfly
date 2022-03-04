@@ -1,0 +1,50 @@
+/* question */
+.question {
+    position: relative;
+    width: 92.5vw;
+    left: 2.5vw;
+    font-family: 'Ubuntu';
+    background-color: rgba(215, 221, 221, 0.45);
+    padding: 8px 8px 8px 8px;
+    font-size: 20px;
+    border-radius: 2px;
+    margin-bottom: 2vw;
+    opacity: 1;
+    animation-name: question-intro;
+    animation-duration: 0.5s;
+}
+/* answer */
+.answer {
+    position: relative;
+    width: 90vw;
+    left: 5vw;
+    font-family: 'Ubuntu';
+    background-color: rgba(215, 221, 221, 0.45);
+    padding: 8px 8px 8px 8px;
+    font-size: 20px;
+    border-radius: 2px;
+    margin-bottom: 100px;
+    opacity: 1;
+    animation-name: answer-intro;
+    animation-duration: 0.5s;
+}
+
+/* question 6 source, link to first lego league page */
+#q6-source {
+    color: #94224e;
+    text-decoration: none;
+}
+#q6-source:hover {
+    color: #c01a5a;
+    text-decoration: underline;
+}
+
+/* keyframes */
+@keyframes question-intro {
+    from {left: -2.5vw; opacity: 0;}
+    to {left: 2.5vw; opacity: 1;}
+}
+@keyframes answer-intro {
+    from {left: 10vw; opacity: 0;}
+    to {left: 5vw; opacity: 1;}
+}

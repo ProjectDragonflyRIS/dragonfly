@@ -12,6 +12,7 @@
     animation-name: text1-intro;
     animation-duration: 0.3s;
 }
+/* timeline of major events */
 #timeline {
     position: relative;
     top: 430px;

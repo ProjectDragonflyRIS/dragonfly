@@ -8,6 +8,7 @@
     min-width: 750px;
     object-fit: cover;
 }
+/* gradient for image1 to make it seem to slowly fade to black */
 #image1-gradient {
     position: absolute;
     left: 5vw;
@@ -24,11 +25,9 @@
     left: 5vw;
     width: 50vw;
     min-width: 300px;
-    font-family: 'Ubuntu';
     background-color: rgba(67, 70, 70, 0.9);
     color: #ffffff;
     padding: 8px 8px 8px 8px;
-    font-size: 20px;
     border-bottom-right-radius: 2px;
     animation-name: text1-intro;
     animation-duration: 0.5s;
