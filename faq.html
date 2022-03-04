@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <title>Frequently Asked Questions</title>
+        <meta charset="utf-8">
+        <meta lang="en-us">
+
+        <!-- css -->
+        <link rel="stylesheet" href="css/main/main.css">
+        <link rel="stylesheet" href="css/help.css">
+
+        <!-- js -->
+        <script src="js/menu.js"></script>
+        <script src="js/loop.js"></script>
+    </head>
+    <body style="background-color: #000000; overflow-x: hidden;">
+        
+        <!-- main parts of the page/information -->
+        <header>
+            <a href="index.html"><img src="images/logo.png" id="logo"></a>
+            <h1>FAQ</h1>
+            <!-- background -->
+            <img id="background-image" src="images/help/image1.jpg" style="height: 250vh;">
+            <div id="background-gradient" style="height: 250vh;"></div>
+        </header>
+        
+        <!-- information -->
+        <div style="position: relative; display: flex; flex-direction: column; top: 200px;">
+            <!-- question 1 -->
+            <div class="question">
+                <b>1) How is this particularly different from other existing products like this?</b>
+            </div>
+            <div class="answer">
+                As previously mentioned, this is a product that not only 
+                will factually change how we use vehicles and how they operate, but is more 
+                adaptive both towards the environment and society's economy.
+            </div>
+            <!-- question 2 -->
+            <div class="question">
+                <b>2) How will you receive funding for this project?</b>
+            </div>
+            <div class="answer">
+                Well, there are several ways with which we will be able to get this project funded, 
+                the simplest of which being: sell it to investors and let them take it from there. 
+                Another option would be to partner with existing companies that may benefit from this, 
+                and use their funding in order to create the first functional dragonfly machine.
+            </div>
+            <!-- question 3 -->
+            <div class="question">
+                <b>3) What are the long term results to switching to this type of vehicle for major shipping businesses?</b>
+            </div>
+            <div class="answer">
+                We bring together modern technology into every day lives via environmentally healthy resources and the ability 
+                to save as much materials as possible, since you will no longer need seperate 
+                vehicles for different forms of travel, exploration, and shipping. <br><br>
+                It may be hard to believe, but if we all collectively began using this vehicle in 
+                place of planes, helicopters, trucks, and ships,
+                which mind you all are conventionally powered by oils, we would have a plethora of 
+                freed metals and resource. These may be recycled
+                and reused for other purposes, which will allow economies and industries grow, as 
+                critical demands for certain things will drop.
+            </div>
+            <!-- question 4 -->
+            <div class="question">
+                <b>4) What is the Dragonfly Modular Customization System&copy?</b>
+            </div>
+            <div class="answer">
+                Our drone can be customized to the clients will, they may choose the size and 
+                which uses the drone/vehicle may have. For example, some drones may be used for 
+                rescues or others may be used only for cargo. <br><br>
+                The ability to change the functionality and size of the 
+                vehicle moves us a crucial step into transportation and delivery capabilities.
+            </div>
+            <!-- question 5 -->
+            <div class="question">
+                <b>5) What caused the spark to this project?</b>
+            </div>
+            <div class="answer">
+                This is the result of our participation in the 
+                <b><i>FIRST®</i> LEGO® League,</b> 
+                we used critical thinking to our advantage to reach where we are now.
+            </div>
+            <!-- question 6 -->
+            <div class="question">
+                <b>6) What is the <i>First®</i> Lego® League?</b>
+            </div>
+            <div class="answer">
+                <b><i>First®</i> LEGO® League</b> introduces science, technology, 
+                engineering, and math (STEM) to children ages 4-16* through fun, 
+                exciting hands-on learning. Participants gain real-world problem 
+                solving experience through a guided, global robotics program, 
+                helping today's students and teachers build a better future together. <br><br>
+
+                Our three divisions inspire youth to experiment and grow their critical thinking, 
+                coding, and design skills through hands-on STEM learning and robotics. <br><br>
+
+                <b><a href="https://www.firstlegoleague.org/about" id="q6-source">Source</a></b>
+            </div>
+        </div>
+
+        <!-- footer (if not already clear) -->
+        <footer id="footer">
+            <!-- FLL logo, if clicked, send to FLL home page -->
+            <a href="https://www.firstlegoleague.org/">
+                <img id="fll-logo" src="images/fll.png" alt="RTA Dubai Logo">
+            </a>
+            <!-- copyright and company name -->
+            <p id="footer-copyright">Copyright &copy 2022 Dragonfly Inc</p>
+            <!-- links to pages -->
+            <a href="index.html" class="footer-link" style="margin-left: auto;">Home</a>
+            <a href="about.html" class="footer-link">About Us</a>
+            <a href="product.html" class="footer-link">Our Product</a>
+            <a href="faq.html" class="footer-link">FAQ</a>
+            <a href="contact.html" class="footer-link">Contact Us</a>
+        </footer>
+
+        <!-- navigation bar -->
+        
+        <!-- white slightly transparent wall that appears when hamburger is pressed -->
+        <div id="menu-background"></div>
+        <!-- hamburger menu -->
+        <button id="hamburger-menu" onclick="menuPressed();">
+            <img src="images/menu.svg" id="hamburger-menu-image">
+        </button>
+        <div id="navbar">
+            <!-- x menu -->
+            <button id="x-menu" onclick="menuPressed();">
+                <img src="images/x-menu.png" id="x-menu-image">
+            </button>
+            <div class="navbar-option">
+                <a href="index.html" class="navbar-text"><b>Home</b></a>
+            </div>
+            <div class="navbar-option">
+                <a href="about.html" class="navbar-text"><b>About Us</b></a>
+            </div>
+            <div class="navbar-option">
+                <a href="product.html" class="navbar-text"><b>Our Product</b></a>
+            </div>
+            <div class="navbar-option">
+                <a href="faq.html" class="navbar-text"><b>FAQ</b></a>
+            </div>
+            <div class="navbar-option">
+                <a href="contact.html" class="navbar-text"><b>Contact Us</b></a>
+            </div>
+        </div>
+    </body>
+</html>
