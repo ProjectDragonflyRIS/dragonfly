@@ -15,13 +15,13 @@
     <body style="background-color: #000000; overflow-x: hidden;">
         
         <!-- main parts of the page/information -->
-        <header>
-            <a href="index.html"><img src="images/logo.png" id="logo"></a>
+        <header style="left: 0px;">
             <h1>Project Dragonfly</h1>
+            <img src="images/logo.png" id="logo">
+            
             <!-- background -->
             <img id="background-image" src="images/index/image1.jpg">
             <div id="background-gradient"></div>
-            <div id="extender" style="height: calc(200px + 100vh);"></div>
         </header>
         
         <!-- information -->
@@ -38,7 +38,28 @@
             </p>
             <img id="image1" src="images/index/image2.png">
         </div>
-        <a href="https://youtu.be/opI4FMytv74" id="learn-more-button"><b>Learn More</b></a>
+        <!-- second body of text -->
+        <p id="text2">
+            <b>Delivering effectively</b> to remote locations with varying 
+            landscapes and customizability is usually costly, difficult, and non-eco-friendly. <br><br>
+
+            <i><b>We have the solution.</b></i> <br><br>
+
+            Find more info on our <a href="product.html" id="product-link">product</a> page!
+        </p>
+        <!-- container to hold both videos -->
+        <div id="video-container">
+            <!-- first video -->
+            <iframe src="https://www.youtube.com/embed/opI4FMytv74" 
+                frameborder="0" allowfullscreen="true"
+                class="video">
+            </iframe>
+            <!-- second video -->
+            <iframe src="https://www.youtube.com/embed/opI4FMytv74" 
+                frameborder="0" allowfullscreen="true"
+                class="video">
+            </iframe>
+        </div>
 
         <!-- footer (if not already clear) -->
         <footer id="footer">
@@ -47,7 +68,7 @@
                 <img id="fll-logo" src="images/fll.png" alt="FLL Logo">
             </a>
             <!-- copyright and company name -->
-            <p id="footer-copyright">Copyright &copy 2022 Dragonfly Inc</p>
+            <p id="footer-copyright">2022 Dragonfly Inc</p>
             <!-- links to pages -->
             <a href="index.html" class="footer-link" style="margin-left: auto;">Home</a>
             <a href="about.html" class="footer-link">About Us</a>
@@ -69,20 +90,23 @@
             <button id="x-menu" onclick="menuPressed();">
                 <img src="images/x-menu.png" id="x-menu-image">
             </button>
-            <div class="navbar-option">
-                <a href="index.html" class="navbar-text"><b>Home</b></a>
-            </div>
-            <div class="navbar-option">
-                <a href="about.html" class="navbar-text"><b>About Us</b></a>
-            </div>
-            <div class="navbar-option">
-                <a href="product.html" class="navbar-text"><b>Our Product</b></a>
-            </div>
-            <div class="navbar-option">
-                <a href="faq.html" class="navbar-text"><b>FAQ</b></a>
-            </div>
-            <div class="navbar-option">
-                <a href="contact.html" class="navbar-text"><b>Contact Us</b></a>
+            
+            <!-- contains and holds all of the navigation bar items -->
+            <div id="navbar-item-container">
+                <!-- redirect to index -->
+                <a href="index.html" class="navbar-item"><b>Home</b></a>
+
+                <!-- redirect to about -->
+                <a href="about.html" class="navbar-item"><b>About Us</b></a>
+
+                <!-- redirect to product -->
+                <a href="product.html" class="navbar-item"><b>Our Product</b></a>
+
+                <!-- redirect to faq -->
+                <a href="faq.html" class="navbar-item"><b>FAQ</b></a>
+
+                <!-- redirect to contact -->
+                <a href="contact.html" class="navbar-item"><b>Contact Us</b></a>
             </div>
         </div>
     </body>
