@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>template</title>
+        <meta charset="utf-8">
+        <meta lang="en-us">
+
+        <!-- css -->
+        <link rel="stylesheet" href="css/main/main.css">
+        <link rel="stylesheet" href="css/index.css">
+
+        <!-- js -->
+        <script src="js/menu.js"></script>
+        <script src="js/loop.js"></script>
+    </head>
+    <body style="background-color: #000000; overflow-x: hidden;">
+        
+        <!-- main parts of the page/information -->
+        <header>
+            <a href="index.html"><img src="images/logo.png" id="logo"></a>
+            <h1>template</h1>
+            <!-- background -->
+            <img id="background-image" src="images/template.jpeg">
+            <div id="background-gradient"></div>
+            <div id="extender" style="height: calc(200px + 100vh);"></div>
+        </header>
+        
+        <!-- information -->
+        <div></div>
+
+        <!-- footer (if not already clear) -->
+        <footer id="footer">
+            <!-- FLL logo, if clicked, send to FLL home page -->
+            <a href="https://www.firstlegoleague.org/">
+                <img id="fll-logo" src="images/fll.png" alt="FLL Logo">
+            </a>
+            <!-- copyright and company name -->
+            <p id="footer-copyright">Copyright &copy 2022 Dragonfly Inc</p>
+            <!-- links to pages -->
+            <a href="index.html" class="footer-link" style="margin-left: auto;">Home</a>
+            <a href="about.html" class="footer-link">About Us</a>
+            <a href="product.html" class="footer-link">Our Product</a>
+            <a href="faq.html" class="footer-link">FAQ</a>
+            <a href="contact.html" class="footer-link">Contact Us</a>
+        </footer>
+
+        <!-- navigation bar -->
+
+        <!-- white slightly transparent wall that appears when hamburger is pressed -->
+        <div id="menu-background"></div>
+        <!-- hamburger menu -->
+        <button id="hamburger-menu" onclick="menuPressed();">
+            <img src="images/menu.svg" id="hamburger-menu-image">
+        </button>
+        <div id="navbar">
+            <!-- x menu -->
+            <button id="x-menu" onclick="menuPressed();">
+                <img src="images/x-menu.png" id="x-menu-image">
+            </button>
+            <div class="navbar-option">
+                <a href="index.html" class="navbar-text"><b>Home</b></a>
+            </div>
+            <div class="navbar-option">
+                <a href="about.html" class="navbar-text"><b>About Us</b></a>
+            </div>
+            <div class="navbar-option">
+                <a href="product.html" class="navbar-text"><b>Our Product</b></a>
+            </div>
+            <div class="navbar-option">
+                <a href="faq.html" class="navbar-text"><b>FAQ</b></a>
+            </div>
+            <div class="navbar-option">
+                <a href="contact.html" class="navbar-text"><b>Contact Us</b></a>
+            </div>
+        </div>
+    </body>
+</html>
