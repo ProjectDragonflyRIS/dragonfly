@@ -12,6 +12,41 @@
     animation-name: text1-intro;
     animation-duration: 0.3s;
 }
+
+/* meet the team */
+#team-title {
+    position: relative;
+    top: 250px;
+    left: 200px;
+    margin-bottom: 100px;
+    width: fit-content;
+    background-color: rgba(215, 221, 221, 0.45);
+    color: #000000;
+    padding: 8px 8px 8px 8px;
+    border-radius: 2px;
+}
+#team-container {
+    position: relative;
+    top: 250px;
+    left: 10vw;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: ltr;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.nametag {
+    position: relative;
+    width: 30vw;
+    margin-right: calc(20vw - 4px);
+    margin-left: -4px;
+    margin-bottom: 50px;
+    background-color: #ffffff;
+    padding: 4px 4px 4px 4px;
+    border-radius: 2px;
+}
+
 /* timeline of major events */
 #timeline {
     position: relative;
@@ -44,16 +79,24 @@
 #timeline-title {
     position: relative;
     top: 350px;
-    text-align: center;
-    color: #ffffff;
+    left: 200px;
     font-family: 'Ubuntu';
     background-color: rgba(215, 221, 221, 0.45);
     color: #000000;
     padding: 8px 8px 8px 8px;
     width: fit-content;
-    margin-left: 200px;
     border-radius: 2px;
 
+}
+#timeline-instructions {
+    position: relative;
+    top: 350px;
+    left: 20vw;
+    width: fit-content;
+    background-color: rgba(215, 221, 221, 0.45);
+    color: #000000;
+    padding: 8px 8px 8px 8px;
+    border-radius: 2px;
 }
 .timeline-item {
     position: relative;
