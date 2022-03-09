@@ -1,0 +1,180 @@
+/* desktop port */
+@media (orientation: landscape) {
+    .nametag {
+        position: relative;
+        width: 40vw;
+        margin-right: calc(20vw - 4px);
+        margin-left: -4px;
+        margin-bottom: 50px;
+        background-color: #ffffff;
+        padding: 4px 4px 4px 4px;
+        border-radius: 10px;
+    }
+}
+
+/* mobile port */
+@media (orientation: portrait) {
+    .nametag {
+        position: relative;
+        width: 40vh;
+        margin-right: calc(20vw - 4px);
+        margin-left: -4px;
+        margin-bottom: 50px;
+        background-color: #ffffff;
+        padding: 4px 4px 4px 4px;
+        border-radius: 10px;
+    }
+}
+
+#text1 {
+    position: relative;
+    width: 90vw;
+    left: 3vw;
+    top: 200px;
+    font-family: 'Ubuntu';
+    background-color: rgba(215, 221, 221, 0.45);
+    color: #000000;
+    padding: 8px 8px 8px 8px;
+    font-size: 20px;
+    border-radius: 10px;
+    animation-name: text1-intro;
+    animation-duration: 0.3s;
+}
+
+/* meet the team */
+#team-title {
+    position: relative;
+    top: 250px;
+    left: 200px;
+    margin-bottom: 100px;
+    width: fit-content;
+    background-color: rgba(215, 221, 221, 0.45);
+    color: #000000;
+    padding: 8px 8px 8px 8px;
+    border-radius: 10px;
+}
+#team-container {
+    position: relative;
+    top: 250px;
+    left: 10vw;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: ltr;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* timeline of major events */
+#timeline {
+    position: relative;
+    top: 430px;
+    left: 3vw;
+    height: 100px;
+    width: 90vw;
+    background-color: rgba(215, 221, 221, 0.45);
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: ltr;
+    justify-content: space-evenly;
+}
+#timeline-description {
+    position: relative;
+    width: 90vw;
+    left: 3vw;
+    top: 500px;
+    font-family: 'Ubuntu';
+    background-color: rgba(215, 221, 221, 0.45);
+    color: #000000;
+    padding: 8px 8px 8px 8px;
+    font-size: 20px;
+    border-radius: 10px;
+    opacity: 0;
+    animation-duration: 0.3s;
+}
+#timeline-title {
+    position: relative;
+    top: 350px;
+    left: 200px;
+    font-family: 'Ubuntu';
+    background-color: rgba(215, 221, 221, 0.45);
+    color: #000000;
+    padding: 8px 8px 8px 8px;
+    width: fit-content;
+    border-radius: 10px;
+
+}
+#timeline-instructions {
+    position: relative;
+    top: 350px;
+    left: 20vw;
+    width: fit-content;
+    background-color: rgba(215, 221, 221, 0.45);
+    color: #000000;
+    padding: 8px 8px 8px 8px;
+    border-radius: 10px;
+}
+.timeline-item {
+    position: relative;
+    top: -20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: #ffffff;
+    margin-bottom: -20px;
+    border: none;
+    animation-duration: 0.2s;
+}
+.timeline-item:hover {
+    cursor: pointer;
+}
+.timeline-item-date {
+    position: relative;
+    top: 58px;
+    left: -50%;
+    font-size: 12.5px;
+    width: 140px;
+    font-family: 'IBM Plex Mono';
+    font-weight: bold;
+    color: #000000;
+}
+.timeline-item-number {
+    position: absolute;
+    align-self: center;
+    margin: auto;
+    top: 20px;
+    left: 20px;
+    font-size: 16px;
+    font-family: 'IBM Plex Mono';
+    font-weight: 600;
+    color: #000000;
+}
+
+/* keyframes */
+@keyframes timeline-item-pressed {
+    from {top: -20px}
+    to {top: -40px}
+}
+@keyframes timeline-item-cancel-pressed {
+    from {top: -40px}
+    to {top: -20px}
+}
+@keyframes text1-intro {
+    from {top: 250px; opacity: 0}
+    to {top: 200px; opacity: 1}
+}
+@keyframes timeline-description-on {
+    from {top: 550px; opacity: 0}
+    to {top: 500px; opacity: 1}
+}
+@keyframes timeline-description-off {
+    from {top: 500px; opacity: 1}
+    to {top: 550px; opacity: 0}
+}
+@keyframes timeline-description-switch {
+    0% {top: 500px; opacity: 1}
+    50% {top: 550px; opacity: 0}
+    100% {top: 500px; opacity: 1}
+}
