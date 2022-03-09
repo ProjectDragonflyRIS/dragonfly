@@ -1,3 +1,31 @@
+/* desktop port */
+@media (orientation: landscape) {
+    .nametag {
+        position: relative;
+        width: 40vw;
+        margin-right: calc(20vw - 4px);
+        margin-left: -4px;
+        margin-bottom: 50px;
+        background-color: #ffffff;
+        padding: 4px 4px 4px 4px;
+        border-radius: 10px;
+    }
+}
+
+/* mobile port */
+@media (orientation: portrait) {
+    .nametag {
+        position: relative;
+        width: 40vh;
+        margin-right: calc(20vw - 4px);
+        margin-left: -4px;
+        margin-bottom: 50px;
+        background-color: #ffffff;
+        padding: 4px 4px 4px 4px;
+        border-radius: 10px;
+    }
+}
+
 #text1 {
     position: relative;
     width: 90vw;
@@ -35,16 +63,6 @@
     flex-direction: ltr;
     flex-wrap: wrap;
     justify-content: space-evenly;
-}
-.nametag {
-    position: relative;
-    width: 30vw;
-    margin-right: calc(20vw - 4px);
-    margin-left: -4px;
-    margin-bottom: 50px;
-    background-color: #ffffff;
-    padding: 4px 4px 4px 4px;
-    border-radius: 10px;
 }
 
 /* timeline of major events */
