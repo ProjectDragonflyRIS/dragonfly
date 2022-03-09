@@ -1,30 +1,80 @@
-#image1 {
-    position: relative;
-    top: 150px;
-    width: 20vw;
-    min-width: 100px;
-    height: auto;
-    background-color: #ffffff;
-    padding: 4px 4px 4px 4px;
-    border-radius: 10px;
-    margin-bottom: 100px;
-    animation-name: item-intro;
-    animation-duration: 1s;
+/* desktop port */
+@media (orientation: landscape) {
+    #container1 {
+        display: flex; 
+        flex-direction: ltr; 
+        justify-content: space-evenly; 
+        flex-wrap: nowrap;
+    }
+
+    #image1 {
+        position: relative;
+        top: 150px;
+        width: 20vw;
+        min-width: 100px;
+        height: auto;
+        background-color: #ffffff;
+        padding: 4px 4px 4px 4px;
+        border-radius: 10px;
+        margin-bottom: 100px;
+        animation-name: item-intro;
+        animation-duration: 1s;
+    }
+
+    #text1 {
+        position: relative;
+        top: 150px;
+        width: 30vw;
+        max-width: 400px;
+        min-width: 300px;
+        height: auto;
+        background-color: rgba(215, 221, 221, 0.45);
+        color: #000000;
+        padding: 8px 8px 8px 8px;
+        border-radius: 10px;
+        margin-bottom: 100px;
+        animation-name: item-intro;
+        animation-duration: 1s;
+    }
 }
-#text1 {
-    position: relative;
-    top: 150px;
-    width: 30vw;
-    max-width: 400px;
-    min-width: 300px;
-    height: auto;
-    background-color: rgba(215, 221, 221, 0.45);
-    color: #000000;
-    padding: 8px 8px 8px 8px;
-    border-radius: 10px;
-    margin-bottom: 100px;
-    animation-name: item-intro;
-    animation-duration: 1s;
+
+/* mobile port */
+@media (orientation: portrait) {
+    #container1 {
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-evenly; 
+        flex-wrap: nowrap;
+    }
+
+    #image1 {
+        position: relative;
+        top: 150px;
+        left: 30vw;
+        width: 40vw;
+        height: auto;
+        background-color: #ffffff;
+        padding: 4px 4px 4px 4px;
+        border-radius: 10px;
+        margin-bottom: 100px;
+        animation-name: item-intro;
+        animation-duration: 1s;
+    }
+
+    #text1 {
+        position: relative;
+        top: 150px;
+        left: 25vw;
+        width: 50vw;
+        height: auto;
+        background-color: rgba(215, 221, 221, 0.45);
+        color: #000000;
+        padding: 8px 8px 8px 8px;
+        border-radius: 10px;
+        margin-bottom: 100px;
+        animation-name: item-intro;
+        animation-duration: 1s;
+    }
 }
 #text2 {
     position: relative;
@@ -39,6 +89,7 @@
     animation-name: item-intro;
     animation-duration: 1s;
 }
+
 /* holds both videos and manages them */
 #video-container {
     position: relative;

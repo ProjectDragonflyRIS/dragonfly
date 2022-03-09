@@ -26,6 +26,19 @@ color palette:
         font-size: 1.4vw; /* width parameter */
         color: #ffffff;
     }
+
+    /* background image */
+    #background-image {
+        position: absolute;
+        top: 200px;
+        left: 0px;
+        width: calc(100vw + 100px);
+        height: 100vh;
+        object-fit: cover;
+        animation-name: background-image-intro;
+        animation-duration: 1.5s;
+        -webkit-user-drag: none;
+    }
 }
 
 /* mobile port */
@@ -35,6 +48,17 @@ color palette:
         font-family: 'Ubuntu';
         font-size: 2vh; /* width parameter */
         color: #ffffff;
+    }
+
+    /* background image */
+    #background-image {
+        position: absolute;
+        top: 200px;
+        left: 0px;
+        width: calc(100vw);
+        height: 100vh;
+        object-fit: cover;
+        -webkit-user-drag: none;
     }
 }
 
@@ -47,17 +71,6 @@ color palette:
     height: auto;
 }
 
-#background-image {
-    position: absolute;
-    top: 200px;
-    left: 0px;
-    width: calc(100vw + 100px);
-    height: 100vh;
-    object-fit: cover;
-    animation-name: background-image-intro;
-    animation-duration: 1.5s;
-    -webkit-user-drag: none;
-}
 #background-gradient {
     position: absolute;
     top: 200px;
