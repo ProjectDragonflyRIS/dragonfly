@@ -8,7 +8,7 @@
     color: #000000;
     padding: 8px 8px 8px 8px;
     font-size: 20px;
-    border-radius: 2px;
+    border-radius: 10px;
     animation-name: text1-intro;
     animation-duration: 0.3s;
 }
@@ -23,7 +23,7 @@
     background-color: rgba(215, 221, 221, 0.45);
     color: #000000;
     padding: 8px 8px 8px 8px;
-    border-radius: 2px;
+    border-radius: 10px;
 }
 #team-container {
     position: relative;
@@ -44,7 +44,7 @@
     margin-bottom: 50px;
     background-color: #ffffff;
     padding: 4px 4px 4px 4px;
-    border-radius: 2px;
+    border-radius: 10px;
 }
 
 /* timeline of major events */
@@ -57,7 +57,7 @@
     background-color: rgba(215, 221, 221, 0.45);
     padding-left: 8px;
     padding-right: 8px;
-    border-radius: 2px;
+    border-radius: 10px;
     display: flex;
     flex-direction: ltr;
     justify-content: space-evenly;
@@ -72,7 +72,7 @@
     color: #000000;
     padding: 8px 8px 8px 8px;
     font-size: 20px;
-    border-radius: 2px;
+    border-radius: 10px;
     opacity: 0;
     animation-duration: 0.3s;
 }
@@ -85,7 +85,7 @@
     color: #000000;
     padding: 8px 8px 8px 8px;
     width: fit-content;
-    border-radius: 2px;
+    border-radius: 10px;
 
 }
 #timeline-instructions {
@@ -96,7 +96,7 @@
     background-color: rgba(215, 221, 221, 0.45);
     color: #000000;
     padding: 8px 8px 8px 8px;
-    border-radius: 2px;
+    border-radius: 10px;
 }
 .timeline-item {
     position: relative;

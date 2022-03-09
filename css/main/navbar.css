@@ -8,7 +8,6 @@
         background-color: #2F2235;
         width: 16vw; 
         min-width: 200px;
-        border-radius: 2px;
         padding-top: 25px;
         padding-left: 50px;
         margin-left: -50px;
@@ -30,7 +29,7 @@
         padding: 16px 16px 16px 16px;
         margin-bottom: 16px;
         margin-right: 16px;
-        border-radius: 2px;
+        border-radius: 5px;
     }
     #x-menu-image {
         position: relative;
@@ -54,7 +53,7 @@
         text-decoration: none;
         padding: 8px 8px 8px 8px;
         margin-right: auto;
-        border-radius: 2px;
+        border-radius: 5px;
         font-size: 20px;
         color: #ffffff;
         animation-name: navbar-item-cancel-hover;
@@ -71,7 +70,6 @@
         width: 100vw;
         height: 66vh;
         margin: none;
-        border-radius: 2px;
         animation-name: navbar-slide;
         animation-duration: 0.4s;
         top: -120vh;
@@ -89,7 +87,7 @@
         padding: 16px 16px 16px 16px;
         margin-bottom: 16px;
         margin-right: 16px;
-        border-radius: 2px;
+        border-radius: 5px;
     }
     #x-menu-image {
         position: relative;
@@ -113,7 +111,7 @@
         text-decoration: none;
         padding: 8px 8px 8px 8px;
         margin-right: auto;
-        border-radius: 2px;
+        border-radius: 5px;
         font-size: 3vh;
         color: #ffffff;
         animation-name: navbar-item-cancel-hover;
@@ -138,7 +136,7 @@
     height: 32px;
     animation-name: navbar-item-cancel-hover;
     animation-duration: 0.2s;
-    border-radius: 1px;
+    border-radius: 5px;
 }
 #hamburger-menu:hover {
     cursor: pointer;

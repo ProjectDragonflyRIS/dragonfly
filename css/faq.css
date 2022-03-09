@@ -7,7 +7,7 @@
     background-color: rgba(215, 221, 221, 0.45);
     padding: 8px 8px 8px 8px;
     font-size: 20px;
-    border-radius: 2px;
+    border-radius: 10px;
     margin-bottom: 2vw;
     opacity: 1;
     animation-name: question-intro;
@@ -22,7 +22,7 @@
     background-color: rgba(215, 221, 221, 0.45);
     padding: 8px 8px 8px 8px;
     font-size: 20px;
-    border-radius: 2px;
+    border-radius: 10px;
     margin-bottom: 100px;
     opacity: 1;
     animation-name: answer-intro;

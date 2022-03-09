@@ -57,3 +57,9 @@
     90% {top: -35px; opacity: 1;}
     100% {top: -30px; opacity: 1;}
 }
+
+/* background image intro */
+@keyframes background-image-intro {
+    from {top: 150px; left: -50px; filter: blur(3);}
+    to {top: 200px; left: 0px; filter: blur(0);}
+}

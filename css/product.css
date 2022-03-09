@@ -1,35 +1,191 @@
-/* product */
-#image1 {
-    position: absolute;
-    left: 5vw;
-    top: 300px;
-    width: 90vw;
-    height: 90vh;
-    min-width: 750px;
-    object-fit: cover;
+
+/* desktop port */
+@media (orientation: landscape) {
+    /* description class */
+    .description {
+        display: flex;
+        flex-direction: ltr;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: 100px;
+    }
+
+    /* description1 */
+    #text2 {
+        position: relative;
+        top: 200px;
+        width: 40vw;
+        margin-bottom: 100px;
+        background-color: rgba(215, 221, 221, 0.45);
+        color: #000000;
+        padding: 8px 8px 8px 8px;
+        border-radius: 10px;
+        animation-name: text2-intro;
+        animation-duration: 0.4s;
+    }
+    #image1 {
+        position: relative;
+        top: 200px;
+        width: 30vw;
+        border-radius: 10px;
+        background-color: #ffffff;
+        padding: 4px 4px 4px 4px;
+        border-radius: 10px;
+        animation-name: image1-intro;
+        animation-duration: 0.4s;
+    }
+
+    /* description1 */
+    #text3 {
+        position: relative;
+        top: 200px;
+        width: 50vw;
+        margin-bottom: 200px;
+        background-color: rgba(215, 221, 221, 0.45);
+        color: #000000;
+        padding: 8px 8px 8px 8px;
+        border-radius: 10px;
+        animation-name: text3-intro;
+        animation-duration: 0.4s;
+    }
+
+    /* diagram 2 */
+    #image2 {
+        position: relative;
+        top: 200px;
+        width: 30vw;
+        margin-bottom: 200px;
+        border-radius: 10px;
+        background-color: #ffffff;
+        padding: 4px 4px 4px 4px;
+        border-radius: 10px;
+    }
 }
-/* gradient for image1 to make it seem to slowly fade to black */
-#image1-gradient {
-    position: absolute;
-    left: 5vw;
-    top: calc(300px + 60vh);
-    width: 90vw;
-    height: 30vh;
-    min-width: 750px;
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), 
-        rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
+
+/* mobile port */
+@media (orientation: portrait) {
+    /* description class */
+    .description {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        margin-bottom: 100px;
+    }
+
+    /* description1 */
+    #text2 {
+        position: relative;
+        top: 200px;
+        left: 5vw;
+        width: 80vw;
+        margin-bottom: 100px;
+        background-color: rgba(215, 221, 221, 0.45);
+        color: #000000;
+        padding: 8px 8px 8px 8px;
+        border-radius: 10px;
+        animation-name: text2-intro;
+        animation-duration: 0.4s;
+    }
+    #image1 {
+        position: relative;
+        top: 200px;
+        left: 15vw;
+        width: 60vw;
+        border-radius: 10px;
+        background-color: #ffffff;
+        padding: 4px 4px 4px 4px;
+        border-radius: 10px;
+        animation-name: image1-intro;
+        animation-duration: 0.4s;
+    }
+
+    /* description1 */
+    #text3 {
+        position: relative;
+        top: 200px;
+        left: 10vw;
+        width: 80vw;
+        margin-bottom: 200px;
+        background-color: rgba(215, 221, 221, 0.45);
+        color: #000000;
+        padding: 8px 8px 8px 8px;
+        border-radius: 10px;
+        animation-name: text3-intro;
+        animation-duration: 0.4s;
+    }
+
+    /* diagram 2 */
+    #image2 {
+        position: relative;
+        top: 200px;
+        left: 15vw;
+        width: 60vw;
+        margin-bottom: 200px;
+        border-radius: 10px;
+        background-color: #ffffff;
+        padding: 4px 4px 4px 4px;
+        border-radius: 10px;
+    }
 }
+
+
+/* introduction to the product */
 #text1 {
-    position: absolute;
-    top: 280px;
-    left: 5vw;
-    width: 50vw;
-    min-width: 300px;
-    background-color: rgba(67, 70, 70, 0.9);
-    color: #ffffff;
+    position: relative;
+    top: 200px;
+    left: 15vw;
+    width: 60vw;
+    margin-bottom: 100px;
+    background-color: rgba(215, 221, 221, 0.45);
+    color: #000000;
     padding: 8px 8px 8px 8px;
-    border-bottom-right-radius: 2px;
+    border-radius: 10px;
     animation-name: text1-intro;
-    animation-duration: 0.5s;
-    margin-right: 50px;
+    animation-duration: 0.4s;
+}
+
+/* put around h2 to center it in the middle */
+.h2-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+/* headers for divisions of info */
+h2 {
+    top: 200px;
+    text-align: center;
+    background-color: rgba(215, 221, 221, 0.45);
+    color: #000000;
+    padding: 8px 8px 8px 8px;
+    border-radius: 10px;
+    width: fit-content;
+    margin-bottom: 50px;
+    animation-name: header-intro;
+    animation-duration: 0.6s;
+}
+
+/* keyframes */
+@keyframes text1-intro {
+    from {top: 300px; opacity: 0;}
+    to {top: 200px; opacity: 1;}
+}
+@keyframes text2-intro {
+    from {top: 100px; opacity: 0;}
+    to {top: 200px; opacity: 1;}
+}
+@keyframes text3-intro {
+    from {filter: blur(4px); opacity: 0;}
+    to {filter: blur(0px); opacity: 1;}
+}
+
+@keyframes image1-intro {
+    from {margin-left: 400px; opacity: 0;}
+    to {margin-left: 0px; opacity: 1;}
+}
+
+@keyframes header-intro {
+    from {top: 150px; opacity: 0;}
+    to {top: 200px; opacity: 1;}
 }

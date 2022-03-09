@@ -10,7 +10,7 @@
         top: calc(100vh - 80px);
         left: 0px;
         width: 100vw;
-        height: 80px;
+        height: 100px;
         background-color: #2F2235;
         animation-name: footer-slide-in;
         animation-duration: 0.2s;
@@ -20,14 +20,14 @@
 /* mobile port */
 @media (orientation: portrait) {
     footer {
+        position: fixed;
         display: flex;
         flex-direction: ltr;
         flex-wrap: nowrap;
-        position: fixed;
         top: calc(100vh - 80px);
         left: 0px;
         width: 100vw;
-        height: 80px;
+        height: 100px;
         background-color: #2F2235;
     }
 }

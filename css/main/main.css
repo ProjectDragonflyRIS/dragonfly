@@ -18,6 +18,26 @@ color palette:
 #2F2235
 */
 
+/* desktop port */
+@media (orientation: landscape) {
+    /* regular text */
+    p {
+        font-family: 'Ubuntu';
+        font-size: 1.4vw; /* width parameter */
+        color: #ffffff;
+    }
+}
+
+/* mobile port */
+@media (orientation: portrait) {
+    /* regular text */
+    p {
+        font-family: 'Ubuntu';
+        font-size: 2vh; /* width parameter */
+        color: #ffffff;
+    }
+}
+
 #logo {
     position: absolute;
     top: 30px;
@@ -31,9 +51,11 @@ color palette:
     position: absolute;
     top: 200px;
     left: 0px;
-    width: 100vw;
+    width: calc(100vw + 100px);
     height: 100vh;
     object-fit: cover;
+    animation-name: background-image-intro;
+    animation-duration: 1.5s;
     -webkit-user-drag: none;
 }
 #background-gradient {
@@ -43,6 +65,14 @@ color palette:
     width: 100vw;
     height: 100vh;
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+#background-top {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 200px;
+    background-color: #000000;
 }
 #extender {
     position: absolute;
@@ -66,10 +96,4 @@ h2 {
     font-family: 'IBM Plex Mono';
     color: #ffffff;
     padding: 10px 10px 10px 10px;
-}
-/* regular text */
-p {
-    font-family: 'Ubuntu';
-    font-size: 1.4vw; /* width parameter */
-    color: #ffffff;
 }
