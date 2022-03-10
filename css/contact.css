@@ -1,58 +1,108 @@
-/* contains both contact option boxes */
-#contact-container {
-    position: relative;
-    left: 9.5vw;
-    width: 80vw;
-    display: flex;
-    flex-direction: ltr;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+/* desktop port */
+@media (orientation: landscape) {
+    /* the regular text in the contact boxes */
+    .box-info {
+        position: relative;
+        padding: 10px 10px 10px 10px;
+        font-size: 1.4vw;
+    }
+    /* the button that sends you to the form page */
+    #form-link {
+        position: relative;
+        top: 10px;
+        left: 20px;
+        color: #ffffff;
+        padding: 10px 10px 10px 10px;
+        background-color: #e26262;
+        border: 3px solid #ffffff;
+        border-radius: 5px;
+        font-family: 'Ubuntu';
+        font-size: 1.4vw;
+        text-decoration: none;
+        animation-name: form-hover-off;
+        animation-duration: 0.2s;
+    }
+    /* contains both contact option boxes */
+    #contact-container {
+        position: relative;
+        left: 9.5vw;
+        width: 80vw;
+        display: flex;
+        flex-direction: ltr;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    /* box class for both form and email contacts */
+    .box {
+        position: relative;
+        top: 100px;
+        width: 30vw;
+        min-width: 300;
+        margin-top: 40px;
+        margin-bottom: 200px;
+        background-color: rgba(215, 221, 221, 0.45);
+        color: #000000;
+        padding: 8px 8px 50px 8px;
+        border: 3px solid #ffffff;
+        border-radius: 10px;
+    }
 }
 
-/* box class for both form and email contacts */
-.box {
-    position: relative;
-    top: 100px;
-    width: 30vw;
-    min-width: 300;
-    margin-top: 40px;
-    background-color: #8a89897c;
-    border: 3px solid #ffffff;
+/* mobile port */
+@media (orientation: portrait) {
+    /* the regular text in the contact boxes */
+    .box-info {
+        position: relative;
+        padding: 10px 10px 10px 10px;
+        font-size: 2.5vh;
+        word-wrap: break-word;
+    }
+    /* the button that sends you to the form page */
+    #form-link {
+        position: relative;
+        top: 10px;
+        left: 20px;
+        color: #ffffff;
+        padding: 10px 10px 10px 10px;
+        background-color: #e26262;
+        border: 3px solid #ffffff;
+        border-radius: 5px;
+        font-family: 'Ubuntu';
+        font-size: 2.5vh;
+        text-decoration: none;
+        animation-name: form-hover-off;
+        animation-duration: 0.2s;
+    }
+    /* contains both contact option boxes */
+    #contact-container {
+        position: relative;
+        left: 9.5vw;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+    /* box class for both form and email contacts */
+    .box {
+        position: relative;
+        top: 100px;
+        left: 15vw;
+        width: 60vw;
+        min-width: 300;
+        margin-top: 40px;
+        margin-bottom: 200px;
+        background-color: rgba(215, 221, 221, 0.45);
+        color: #000000;
+        padding: 8px 8px 50px 8px;
+        border: 3px solid #ffffff;
+        border-radius: 10px;
+    }
 }
 
-/* the button that sends you to the form page */
-#form-link {
-    position: relative;
-    left: 20px;
-    color: #ffffff;
-    padding: 10px 10px 10px 10px;
-    background-color: #e26262;
-    border: 3px solid #ffffff;
-    font-family: 'Ubuntu';
-    font-size: 1.5vw;
-    text-decoration: none;
-    animation-name: form-hover-off;
-    animation-duration: 0.2s;
-}
 #form-link:hover {
     background-color: #e29191;
     animation-name: form-hover-on;
-}
-
-/* the regular text in the contact boxes */
-.box-info {
-    position: relative;
-    padding: 10px 10px 10px 10px;
-}
-
-#background {
-    position: absolute;
-    top: 0px;
-    left: 10vw;
-    width: 80vw;
-    height: 100vh;
-    background-color: #574363;
-    box-shadow: 5px 5px 5px #2a1e30;
 }
 
 /* keyframes */

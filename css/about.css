@@ -2,7 +2,7 @@
 @media (orientation: landscape) {
     .nametag {
         position: relative;
-        width: 40vw;
+        width: 30vw;
         margin-right: calc(20vw - 4px);
         margin-left: -4px;
         margin-bottom: 50px;
