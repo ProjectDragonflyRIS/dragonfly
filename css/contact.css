@@ -57,6 +57,7 @@
         position: relative;
         padding: 10px 10px 10px 10px;
         font-size: 2.5vh;
+        color: #000000;
         word-wrap: break-word;
     }
     /* the button that sends you to the form page */
