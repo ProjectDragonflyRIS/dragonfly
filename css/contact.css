@@ -5,6 +5,7 @@
         position: relative;
         padding: 10px 10px 10px 10px;
         font-size: 1.4vw;
+        color: #000000;
     }
     /* the button that sends you to the form page */
     #form-link {
@@ -14,6 +15,7 @@
         color: #ffffff;
         padding: 10px 10px 10px 10px;
         background-color: #e26262;
+        color: #000000;
         border: 3px solid #ffffff;
         border-radius: 5px;
         font-family: 'Ubuntu';
@@ -65,6 +67,7 @@
         color: #ffffff;
         padding: 10px 10px 10px 10px;
         background-color: #e26262;
+        color: #000000;
         border: 3px solid #ffffff;
         border-radius: 5px;
         font-family: 'Ubuntu';
@@ -98,6 +101,11 @@
         border: 3px solid #ffffff;
         border-radius: 10px;
     }
+}
+
+/* header */
+h2 {
+    color: #000000;
 }
 
 #form-link:hover {
